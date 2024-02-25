@@ -8,9 +8,9 @@ export function clearContent(){
 
 export class Heading{
         
-    constructor(hSize, content, classlist){
-        this.hSize = hSize;
+    constructor(content, classlist = 'x', hSize = 'h2', ){
         this.content = content;
+        this.hSize = hSize;
         this.classes = classlist;
     }
 
@@ -26,6 +26,7 @@ export class Heading{
     
 }
 
+
 export class Paragraph{
     constructor(info){
         this.info = info
@@ -37,4 +38,22 @@ export class Paragraph{
         content.appendChild(paragraph);
     }
 
+}
+
+export class UnorderedList{
+    constructor(heading, arrayOfLi){
+        this.heading = heading;
+        this.listArray = arrayOfLi;
+    }
+    add(){
+        let ul = document.createElement('ul');
+            ul.textContent = this.heading;
+        
+        for (let i = 0; i < this.listArray.length; i++){
+            let li = document.createElement('li');
+                li.textContent = this.listArray[i];
+            ul.appendChild(li);
+        }
+        content.appendChild(ul);
+    }
 }
