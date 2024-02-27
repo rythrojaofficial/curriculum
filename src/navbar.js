@@ -2,7 +2,8 @@ export default createNavbar;
 
 import displayOverview from "./overview";
 import displayBeginning from "./beginning";
-import { clearContent } from "./website";
+import displayAdvanced from "./advanced";
+import { clearContent, navbar, navButton } from "./website";
 
 function createNavbar(){
     // =====================================
@@ -25,14 +26,15 @@ function createNavbar(){
     const navbar = document.createElement('nav');
 
     // nav buttons for nav bar
-
-    class navButton {
+    class NavButton {
+    
         constructor(content, id, fx){
             this.content = content;
             this.id = id;
             this.fx = fx;
+            this.add();
         }
-
+    
         add(){
             let myButton = document.createElement('button');
                 myButton.textContent = this.content;
@@ -42,20 +44,11 @@ function createNavbar(){
                     (this.fx)();
                     
                 });
-
+    
             navbar.appendChild(myButton);
         }
         
     }
-
-
-
-    
-
-
-    const advancedGrades = document.createElement('button');
-        advancedGrades.textContent = 'Advanced Grades (1-4)';
-        advancedGrades.id = 'advanced-grades';
 
     const specialGrades = document.createElement('button');
         specialGrades.textContent = 'Special Grades (1-5)';
@@ -69,14 +62,10 @@ function createNavbar(){
     
     // append
     navbar.appendChild(navHeading);
-        const overview = new navButton('Overview', 'overview-button', displayOverview);
-        overview.add();
+        const overview = new NavButton('Overview', 'overview-button', displayOverview);
+        const beginnerGrades = new NavButton('Beginner Grades (1-3)', 'beginner-grades-button', displayBeginning);
+        const advancedGrades = new NavButton('Advanced Grades (1-4)', 'advanced-grades-button', displayAdvanced);
 
-        const beginningGrades = new navButton('Beginning Grades (1-3)', 'beginning-grades-button', displayBeginning);
-        beginningGrades.add();
-    // navbar.appendChild(overview);
-    // navbar.appendChild(beginningGrades);
-    navbar.appendChild(advancedGrades);
     navbar.appendChild(specialGrades);
 
     navContainer.appendChild(navbar);

@@ -1,20 +1,18 @@
 export default displayBeginning;
 
-import { Heading, UnorderedList } from "./website";
-import { Paragraph } from "./website";
+import { Heading, UnorderedList, Paragraph} from "./website";
 
 
 
 function displayBeginning(){
-    const beginningHeader = new Heading('B(1-3): Beginning Grades');
-        beginningHeader.add();
-    const beginningOverview = new Paragraph(
+    const beginnerHeader = new Heading('B(1-3): Beginner Grades');
+    const beginnerOverview = new Paragraph(
         'Beginning Grades cover basic foundational elements to tricking. From complete beginner to understanding progressions to basic flips and tricks.'
-    ); beginningOverview.add();
+    );
 
+    // beginner 1 stuff
     const b1 = new Heading('Beginner 1');
-        b1.add();
-
+  
     const b1RequiredSkills = new UnorderedList(
         'Required Skills',
         ['TornadoRound',
@@ -22,18 +20,18 @@ function displayBeginning(){
         'Cartwheel',
         'Scoot',
         'ButterflyKick'
-        ]); b1RequiredSkills.add();
-
+        ]); 
+  
     const b1RequiredCombos = new UnorderedList(
-        'Required Combinations',
+        'Required Technical Sequences',
         ['TouchdownHook Cartwheel (repeats)',
         'Cartwheel scoot (repeats)',
         'Tornado TouchdownHook (repeats)',
         'Tornado TouchdownHook Cartwheel Scoot ButterflyKick']);
-        b1RequiredCombos.add();
 
+
+    // beginner 2 stuff
     const b2 = new Heading('Beginner 2');
-        b2.add();
     const b2RequiredSkills = new UnorderedList(
         'Required Skills',
         ['TornadoShuriken',
@@ -42,14 +40,35 @@ function displayBeginning(){
         'MasterScoot(2 hand scoot ok)',
         'Machine'
         ]
-    ); b2RequiredSkills.add();
+    );
     const b2RequiredConnections = new UnorderedList(
-        'Required Combinations',
+        'Required Technical Sequences',
         ['TornadoRounds x 5 OR TornadoShurikens x 5',
         'Machine x 5',
         'Palmkick MasterScoot Machine x 3',
         'SpinStep Cartwheel SpinStepButterflyKick'
         ]
-    ); b2RequiredConnections.add();
+    );
+
+    // beginner 3 stuff
+    const b3 = new Heading('Beginner 3');
+    const b3RequiredSkills = new UnorderedList(
+        'Required Skills',
+        ['SwipeDrill',
+        'TornadoDleg',
+        '1HandCartwheel(FirstHand)',
+        '1HandCartwheel(SecondHand)',
+        ]
+    );
+    const b3RequiredDrills = new UnorderedList(
+        'Required Flipping Progressions',
+        ['DivingForwardsRollUpMat',
+        'DivingSidewaysRollUpMat',
+        'HallwayBackflipDrill',
+        'BtwistDrillUpMat'
+        ]
+    )
+
+
 
 }

@@ -1,9 +1,28 @@
 
 export const content = document.querySelector('#content');
 export function clearContent(){
-    const content = document.querySelector('#content');
-    // clear content 
         content.textContent = '';
+}
+
+export class Navbar{
+    constructor(arrayOfButtonObjects, classlist = 'y'){
+        this.arrayOfButtons = arrayOfButtonObjects;
+        this.classList = classlist;
+        this.add();
+    }
+
+    add(){
+        let nav = document.createElement('nav');
+        for (let i = 0; i < this.arrayOfButtons.length; i++){
+            let button = document.createElement('button');
+                button.textContent = this.arrayOfButtons[i].content;
+                button.addEventListener('click', ()=>{
+                    (this.arrayOfButtons[i].fx)()
+                })
+            nav.appendChild(button);
+        }
+        content.appendChild(nav);
+    }
 }
 
 export class Heading{
@@ -12,6 +31,7 @@ export class Heading{
         this.content = content;
         this.hSize = hSize;
         this.classes = classlist;
+        this.add();
     }
 
 
@@ -19,7 +39,6 @@ export class Heading{
         let heading = document.createElement(this.hSize);
             heading.textContent = this.content;
             heading.classList.add(this.classes)
-        
         content.appendChild(heading);
 
     }
@@ -30,6 +49,7 @@ export class Heading{
 export class Paragraph{
     constructor(info){
         this.info = info
+        this.add();
     }
 
     add(){
@@ -41,13 +61,18 @@ export class Paragraph{
 }
 
 export class UnorderedList{
-    constructor(heading, arrayOfLi){
+    constructor(heading, arrayOfLi, idname = ''){
         this.heading = heading;
         this.listArray = arrayOfLi;
+        this.idname = idname;
+        this.add();
     }
     add(){
         let ul = document.createElement('ul');
             ul.textContent = this.heading;
+            if (this.idname !== ''){
+                ul.setAttribute('id', this.idname)
+            }
         
         for (let i = 0; i < this.listArray.length; i++){
             let li = document.createElement('li');
@@ -56,4 +81,32 @@ export class UnorderedList{
         }
         content.appendChild(ul);
     }
+}
+
+export class Sublist{
+    constructor(heading, arrayOfLi, mainList, idname = ''){
+        this.heading = heading;
+        this.mainList = mainList;
+        this.listArray = arrayOfLi;
+        this.idname = idname;
+        this.add();
+    }
+    add(){
+        let ul = document.createElement('ul');
+            ul.textContent = this.heading;
+            if (this.idname !== ''){
+                ul.setAttribute('id', this.idname)
+            }
+        
+        for (let i = 0; i < this.listArray.length; i++){
+            let li = document.createElement('li');
+                li.textContent = this.listArray[i];
+            ul.appendChild(li);
+        }
+        document.getElementById(this.mainList).appendChild(ul);
+    }
+    
+
+    
+
 }
