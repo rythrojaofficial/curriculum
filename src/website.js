@@ -92,6 +92,7 @@ export class Sublist{
         this.add();
     }
     add(){
+        let li = document.createElement('li');
         let ul = document.createElement('ul');
             ul.textContent = this.heading;
             if (this.idname !== ''){
@@ -103,7 +104,9 @@ export class Sublist{
                 li.textContent = this.listArray[i];
             ul.appendChild(li);
         }
-        document.getElementById(this.mainList).appendChild(ul);
+
+        li.appendChild(ul);
+        document.getElementById(this.mainList).appendChild(li);
     }
     
 

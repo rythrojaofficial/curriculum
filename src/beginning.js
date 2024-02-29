@@ -1,6 +1,6 @@
 export default displayBeginning;
 
-import { Heading, UnorderedList, Paragraph} from "./website";
+import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "./website";
 
 
 
@@ -9,28 +9,55 @@ function displayBeginning(){
     const beginnerOverview = new Paragraph(
         'Beginning Grades cover basic foundational elements to tricking. From complete beginner to understanding progressions to basic flips and tricks.'
     );
+    
+    const BeginnerNav = new Navbar(
+        [
+        {content: 'Beginning 1', fx: displayB1},
+        {content: 'Beginning 2', fx: displayB2},
+        {content: 'Beginning 3', fx: displayB3}
+        ]
+    );    
+}
 
-    // beginner 1 stuff
+
+
+function displayB1(){
+    clearContent();
+    displayBeginning();
     const b1 = new Heading('Beginner 1');
-  
+
     const b1RequiredSkills = new UnorderedList(
-        'Required Skills',
-        ['TornadoRound',
-        'TouchdownHook (Compasso)',
-        'Cartwheel',
-        'Scoot',
-        'ButterflyKick'
-        ]); 
-  
+            'Required Skills',
+            ['TornadoRound',
+            'TouchdownHook (Compasso)',
+            'Cartwheel',
+            'Scoot',
+            'ButterflyKick'
+            ]); 
+
     const b1RequiredCombos = new UnorderedList(
-        'Required Technical Sequences',
-        ['TouchdownHook Cartwheel (repeats)',
-        'Cartwheel scoot (repeats)',
-        'Tornado TouchdownHook (repeats)',
-        'Tornado TouchdownHook Cartwheel Scoot ButterflyKick']);
+            'Required Connections',
+            [],
+            'b1-required'
+            );
+    const b1Repeating = new Sublist(
+        'Repeating',
+        ['TouchdownHook Cartwheel',
+        'Cartwheel scoot',
+        'Tornado TouchdownHook'],
+        'b1-required'
+    );
+    const b1Set = new Sublist (
+        'Combination',
+        ['Tornado TouchdownHook Cartwheel Scoot ButterflyKick'],
+        'b1-required'
 
+    )
+}
 
-    // beginner 2 stuff
+function displayB2(){
+    clearContent();
+    displayBeginning();
     const b2 = new Heading('Beginner 2');
     const b2RequiredSkills = new UnorderedList(
         'Required Skills',
@@ -42,15 +69,28 @@ function displayBeginning(){
         ]
     );
     const b2RequiredConnections = new UnorderedList(
-        'Required Technical Sequences',
+        'Required Connections',
+        [],
+        'b2-required'
+    );
+    const b2Repeating = new Sublist(
+        'Repeating',
         ['TornadoRounds x 5 OR TornadoShurikens x 5',
         'Machine x 5',
         'Palmkick MasterScoot Machine x 3',
-        'SpinStep Cartwheel SpinStepButterflyKick'
-        ]
-    );
+        ],
+        'b2-required'
+    )
+    const b2Set = new Sublist(
+        'Combination',
+        ['Tornado(AnyShape) Tornado(AnyShape) TouchdownHook Palmkick Masterscoot Machine SpinStep Cartwheel Pop360(AnyShape)'],
+        'b2-required'
+    )
+}
 
-    // beginner 3 stuff
+function displayB3(){
+    clearContent();
+    displayBeginning();
     const b3 = new Heading('Beginner 3');
     const b3RequiredSkills = new UnorderedList(
         'Required Skills',
@@ -67,8 +107,7 @@ function displayBeginning(){
         'HallwayBackflipDrill',
         'BtwistDrillUpMat'
         ]
-    )
-
-
-
+)
 }
+
+

@@ -4,6 +4,7 @@ import displayOverview from "./overview";
 import displayBeginning from "./beginning";
 import displayAdvanced from "./advanced";
 import { clearContent, navbar, navButton } from "./website";
+import displaySpecial from "./special";
 
 function createNavbar(){
     // =====================================
@@ -50,10 +51,6 @@ function createNavbar(){
         
     }
 
-    const specialGrades = document.createElement('button');
-        specialGrades.textContent = 'Special Grades (1-5)';
-        specialGrades.id = 'special-grades';
-
     
     
     
@@ -65,9 +62,8 @@ function createNavbar(){
         const overview = new NavButton('Overview', 'overview-button', displayOverview);
         const beginnerGrades = new NavButton('Beginner Grades (1-3)', 'beginner-grades-button', displayBeginning);
         const advancedGrades = new NavButton('Advanced Grades (1-4)', 'advanced-grades-button', displayAdvanced);
-
-    navbar.appendChild(specialGrades);
-
+        const specialGrades = new NavButton('Special Grades (1-5)', 'special-grades-button', displaySpecial);
+        
     navContainer.appendChild(navbar);
     header.appendChild(navContainer);
 }

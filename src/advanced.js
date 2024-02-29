@@ -24,14 +24,14 @@ function displayA1(){
     clearContent();
     displayAdvanced();
     const a1 = new Heading('Advanced 1');
-    const a1Description = new Paragraph('Intermediate Tricks on Floor; Getting over Flipping fear');
+    const a1Description = new Paragraph('Flipping: Any surface with take-off and landing firmer than Trampoline; Floor: TornadoVariations');
     const a1RequiredSkills = new UnorderedList(
         'Required Flipping Progression',
         [],
         'a1-required-skills'
     );
     const a1Flips = new Sublist(
-        'At least ONE of the following on tumbling track or faster',
+        'Minimum 1 of the following on tumbling track or faster',
         ['Backflip',
         'Frontflip',
         'Sideflip',
@@ -44,7 +44,7 @@ function displayA1(){
         'a1-required-floor'
     );
     const a1Floor = new Sublist(
-        'At least ONE of the following',
+        'Minimum 1 of the following',
         ['Aerial',
         'SlantGainer',
         ],
@@ -73,7 +73,7 @@ function displayA2(){
     clearContent();
     displayAdvanced();
     const a2 = new Heading('Advanced 2');
-    const a2Description = new Paragraph('First Flips on Floor; Beginner Twisting; Flip Setups');
+    const a2Description = new Paragraph('Flipping:On Floor; SingleTwisting; 2TrickConnections');
     const a2Flipping = new UnorderedList(
         'Required Skills',
         [
@@ -82,7 +82,7 @@ function displayA2(){
         'a2-required'
     );
     const a2FlippingOptions = new Sublist(
-        'At least 2 of the following flips on floor',
+        'Minimum 2 flips on floor;eg.',
         ['Backflip',
         'Frontflip',
         'BackHandspring',
@@ -91,7 +91,7 @@ function displayA2(){
         'a2-required'
     );
     const a2PreTwistOptions = new Sublist(
-        'At least 3 of the following pre or low singles',
+        'Minimum 3 pre or low-level SingleTwistingTricks',
         ['Raiz',
         'ButterflyTurboHook (Mainstream Illusion Twist)',
         'ButterflyTwist',
@@ -119,9 +119,11 @@ function displayA2(){
         'a2-connections'
     );
     const a2FlipConnection = new Sublist(
-        'Any 2 setup to flip connections; eg.',
+        'Minimum 2 2TrickConnections of a setup and a flip; eg.',
         ['Gumbi Backflip',
         'Cartwheel Frontflip',
+        'FrontflipStepout Cartwheel',
+        'Aerial Masterscoot',
         'MasterScoot Gainer',
         ],
         'a2-connections'
@@ -132,14 +134,14 @@ function displayA3(){
     clearContent();
     displayAdvanced();
     const a3 = new Heading('Advanced 3');
-    const a3Description = new Paragraph('First Flips on Floor; Single Twisting; Trick-Trick Connections');
+    const a3Description = new Paragraph('Power: Singletwisting; 2TrickConnections: 2 NonSetupTricks ');
     const a3RequiredSKills = new UnorderedList(
         'Required Skills',
         [],
         'a3-required-skills'
     )
     const a3Twisting = new Sublist(
-        'At least 3 mid-level single twisting tricks',
+        'Minimum 3 mid-level SingleTwistingTricks',
         ['Tornado360Round (Mainstream Cheat 900)',
         'Scoot360Shuriken',
         'CartwheelFullTwist', 
@@ -166,7 +168,7 @@ function displayA3(){
         'a3RequiredConnections'
     );
     const a3twistConnection = new Sublist(
-        'Flipping/Twisting Skill to Flipping/Twisting Skill Transition; eg.',
+        'Any 2TrickConnection of FlippingOrTwistingTricks; eg.',
         ['Backflip Backflip',
         'Raiz Gainer',
         'Aerial Btwist',
@@ -182,14 +184,14 @@ function displayA4(){
     displayAdvanced();
 
     const a4 = new Heading('Advanced 4');
-    const a4Description = new Paragraph('Single Twisting Variations; 0-1 Power Check; Battle/Performance Tested');
+    const a4Description = new Paragraph('SingleTwistingVariations; 0-1 Power Check; Battle/Performance Tested');
     const a4Skills = new UnorderedList(
         'Required Skills',
         [],
         'a4-skills'
     );
     const a4twisting = new Sublist(
-        'Any 3 Single Twisting Variants utilizing minimum 2 bases and minimum 2 variants; eg',
+        'Any 3 SingleTwistingVariants utilizing minimum 2 bases and minimum 2 variants; eg',
         [],
         'a4-skills',
         'a4-variants'
@@ -204,8 +206,8 @@ function displayA4(){
     );
     const a4Variants = new Sublist(
         'Example Variants',
-        ['Shape Variation like Round, Hook, Doubleleg',
-        'Landing Stance Modification like Hyper (if base trick does not default to hyper'
+        ['ShapeVariations like Round, Hook, Doubleleg',
+        'LandingStanceModifications like Hyper (if base trick does not default to hyper)'
         ],
         'a4-variants'
     );
@@ -216,8 +218,8 @@ function displayA4(){
         'a4-connections'
     );
     const a4twistToFlip = new Sublist(
-        'Flipping/Twisting Skill to Flipping/Twisting Skill Transition',
-        ['Total spinning rotation must be equal to or higher than 360'],
+        'Any 2TrickConnection of FlippingORTwistingTricks with rotation equal to or higher than 360',
+        [],
         'a4-connections',
         'a4-connection-example'
     );
@@ -236,7 +238,7 @@ function displayA4(){
         'a4-battle'
     );
     const a4BattleRequirement = new Sublist(
-        'Must have participated in one of the following',
+        'Minimum participation in 1 of the following',
         ['Battle',
         'Show',
         'Performance',
