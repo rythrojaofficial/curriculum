@@ -1,10 +1,10 @@
 export default createNavbar;
 
-import displayOverview from "./overview";
-import displayBeginning from "./beginning";
-import displayAdvanced from "./advanced";
+import displayOverview from "./display/overview";
+import displayBeginning from "./display/beginning";
+import displayAdvanced from "./display/advanced";
 import { clearContent, navbar, navButton } from "./website";
-import displaySpecial from "./special";
+import displaySpecial from "./display/special";
 
 function createNavbar(){
     // =====================================

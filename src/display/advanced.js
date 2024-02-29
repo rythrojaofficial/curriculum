@@ -1,6 +1,6 @@
 export default displayAdvanced;
 
-import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "./website";
+import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "../website";
 
 function displayAdvanced(){
     const advancedHeader = new Heading('A(1-4): Advanced Grades');

@@ -1,6 +1,6 @@
 export default displaySpecial;
 
-import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "./website";
+import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "../website";
 
 function displaySpecial(){
     const specialHeader = new Heading('A(1-4): Special Grades');
@@ -168,7 +168,7 @@ function displayS2(){
 function displayS3(){
     clearContent();
     displaySpecial();
-    const s3 = new Heading ('3');
+    const s3 = new Heading ('S3');
     const s3Description = new Paragraph('Power: Trip/DubDub; Battle: Defeat S2');
 
     const s3Power = new UnorderedList(

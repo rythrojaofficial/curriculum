@@ -1,7 +1,7 @@
 export default displayOverview;
 
-import { Heading } from "./website";
-import { Paragraph } from "./website";
+import { Heading } from "../website";
+import { Paragraph } from "../website";
 
 function displayOverview(){
     // =====================================

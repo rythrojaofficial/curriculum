@@ -1,6 +1,6 @@
 export default displayBeginning;
 
-import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "./website";
+import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "../website";
 
 
 
