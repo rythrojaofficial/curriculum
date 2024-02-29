@@ -63,7 +63,7 @@ function displayB2(){
     displayBeginning();
     const b2 = new Heading('Beginner 2');
     const b2Overview = new Paragraph('Building off the basics');
-    const b2Description = new Paragraph ('The transition from B1-B2 represents a beginner-level understanding that Tricks can be related to other Tricks and creativity to substitute one Trick for another.', 'description' );
+    const b2Description = new Paragraph ('The transition from B1-B2 represents a beginner-level understanding that Tricks can be related to other Tricks and creativity to substitute one Trick for another.', 'description');
     const b2RequiredSkills = new UnorderedList(
         'Required Skills',
         ['TornadoShuriken',
@@ -84,7 +84,7 @@ function displayB2(){
         'HeadDownHook',
         'HookKick',
         'HookSweep'
-        ]
+        ], 'b2-skills'
     )
     const b2RequiredConnections = new UnorderedList(
         'Required Connections',

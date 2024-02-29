@@ -9,7 +9,7 @@ body{
     background: repeat url('../images/carbon_fibre.png');
     display:grid;
     grid-template-columns: auto 90vw auto;
-    grid-template-rows: 5vh auto clamp(50vh, 75vh, 75vh) 5vh;
+    grid-template-rows: 5vh auto clamp(75vh 90vh) 5vh;
 }
 header,
 #content{
