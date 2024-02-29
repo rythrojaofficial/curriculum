@@ -1,3 +1,3 @@
 # Axis 45 Curriculum and Grade Scale
 TOP dynamically loaded page using webpack
-[live preview](https://rythrojaofficial.github.io/webpack_page/)
+[live preview](https://rythrojaofficial.github.io/curriculum/)
