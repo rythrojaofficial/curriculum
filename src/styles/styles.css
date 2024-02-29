@@ -9,7 +9,7 @@ body{
     background: repeat url('../images/carbon_fibre.png');
     display:grid;
     grid-template-columns: 5vw 80vw 5vw;
-    grid-template-rows: 5vh 15vh 75vh 5vh;
+    grid-template-rows: 5vh auto clamp(50vh, 75vh, 75vh) 5vh;
 }
 header,
 #content{
@@ -35,14 +35,27 @@ nav button {
     background: repeat url('../images/white_carbon.webp');
     border-radius: .5rem;
     margin-right: .25rem; 
-    border-width: .1rem;
+    border-width: .125rem;
+    margin-bottom: .75rem;
     text-transform: capitalize;
     transition-property: all;
     transition-duration: .2s;
   } 
   nav button:hover {
-    letter-spacing: .15rem;
+    letter-spacing: .05rem;
+    color:rgb(34, 88, 34);
+    border-color: rgb(34, 88, 34);
   } 
+
+  /* @media only screen and (max-width: 600px) {
+    .nav-container {
+     display: flex;
+     flex-direction: column;
+    };
+    nav button {
+        width: 100%;
+    }
+  } */
 
  ul{
     padding-left: 0rem;
@@ -59,7 +72,6 @@ li{
     font-weight: 400;
     list-style-type: none;
     line-height: 2rem;
-    /* color:rgb(88, 34, 34); */
     list-style-type: none;
 }
 
