@@ -3,7 +3,7 @@ export default displaySpecial;
 import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from "../website";
 
 function displaySpecial(){
-    const specialHeader = new Heading('A(1-4): Special Grades');
+    const specialHeader = new Heading('S(1-5): Special Grades');
     const specialOverview = new Paragraph(
         'Special Grades cover a broad category but are essentially understood to be dubs+ and Battle-Ready.',
         'category-overview'
@@ -99,7 +99,7 @@ function displayS2(){
     clearContent();
     displaySpecial();
     const s2 = new Heading ('S2');
-    const s2Description = new Paragraph('Power:Variated Dubs; Skill:Landing Stances ; Battle: Defeat s1','category-overview');
+    const s2Description = new Paragraph('Power:Variated Dubs; Skill:Landing Stances; Battle: Defeat S1','category-overview');
     const s2Power = new UnorderedList(
         'Required Power',
         [],
