@@ -135,7 +135,7 @@ function displayA3(){
     clearContent();
     displayAdvanced();
     const a3 = new Heading('Advanced 3');
-    const a3Description = new Paragraph('Power: Singletwisting; 2TrickConnections: 2 NonSetupTricks','category-overview');
+    const a3Description = new Paragraph('Power: Singletwisting; 2TrickConnections: FlippingOrTwistingTricks','category-overview');
     const a3RequiredSKills = new UnorderedList(
         'Required Skills',
         [],
