@@ -22,7 +22,7 @@ function createNavbar(){
 
     const navHeading = document.createElement('h1');
         navHeading.classList.add('nav-heading');
-        navHeading.textContent = 'Axis 45 Grade Scale & Curriculum';
+        navHeading.textContent = 'Axis 45 Curriculum & Grade Scale';
 
     const navbar = document.createElement('nav');
 

@@ -9,6 +9,7 @@ function displayAdvanced(){
         'category-overview'
     );
 
+
     const advancedNav = new Navbar(
         [
         {content: 'Advanced 1', fx: displayA1},
@@ -25,8 +26,9 @@ function displayA1(){
     clearContent();
     displayAdvanced();
     const a1 = new Heading('Advanced 1');
-    const a1Description = new Paragraph('Flipping: Any surface with take-off and landing firmer than Trampoline; Floor: TornadoVariations','category-overview');
-    const a1RequiredSkills = new UnorderedList(
+    const a1Overview = new Paragraph('Flipping: Any surface with take-off and landing firmer than Trampoline; Floor: TornadoVariations','category-overview');
+    const a1Description = new Paragraph("The transition from Beginner to Advanced represents understanding the concept of ShapeVariation and overcoming one of the biggest physical/mental hurdles to tricking---going from NotFlipping to Flipping.  If you made it here, you're likely to go further.", 'description');
+    const a1Flipping = new UnorderedList(    
         'Required Flipping Progression',
         [],
         'a1-required-skills'
@@ -74,7 +76,8 @@ function displayA2(){
     clearContent();
     displayAdvanced();
     const a2 = new Heading('Advanced 2');
-    const a2Description = new Paragraph('Flipping:On Floor; SingleTwisting; 2TrickConnections','category-overview');
+    const a2Overview = new Paragraph('Flipping:On Floor; SingleTwisting; 2TrickConnections','category-overview');
+    const a2Description = new Paragraph('The transition from A1-A2 represents a competence in Flipping and knocking on the door of SingleTwistingTricks.', 'description')
     const a2Flipping = new UnorderedList(
         'Required Skills',
         [
@@ -135,7 +138,8 @@ function displayA3(){
     clearContent();
     displayAdvanced();
     const a3 = new Heading('Advanced 3');
-    const a3Description = new Paragraph('Power: Singletwisting; 2TrickConnections: FlippingOrTwistingTricks','category-overview');
+    const a3Overview = new Paragraph('Power: Singletwisting; 2TrickConnections: FlippingOrTwistingTricks','category-overview');
+    const a3Description = new Paragraph('The transition from A2-A3 represents the intermediate understanding of both Flipping and SingleTwistingTricks.  At this point the Tricker should be capable of confidently utilizing their skills for Battles or Shows.', 'description')
     const a3RequiredSKills = new UnorderedList(
         'Required Skills',
         [],
@@ -184,7 +188,8 @@ function displayA4(){
     displayAdvanced();
 
     const a4 = new Heading('Advanced 4');
-    const a4Description = new Paragraph('SingleTwistingVariations; 0-1 Power Check; Battle/Performance Tested','category-overview');
+    const a4Overview = new Paragraph('SingleTwistingVariations; 0-1 Power Check; Battle/Performance Tested','category-overview');
+    const a4Description = new Paragraph('The transition from A3-A4 represents an advanced understaning of SingleTwistingTricks, as well as an intermediate understaning of ShapeVariation, LandingStanceModification, and TrickConnections.', 'description')
     const a4Skills = new UnorderedList(
         'Required Skills',
         [],

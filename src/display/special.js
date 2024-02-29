@@ -5,7 +5,7 @@ import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from 
 function displaySpecial(){
     const specialHeader = new Heading('S(1-5): Special Grades');
     const specialOverview = new Paragraph(
-        'Special Grades cover a broad category but are essentially understood to be dubs+ and Battle-Ready.',
+        'Special Grades cover a broad category but are essentially understood to be DoubleTwistingTricks+ and BattleReady.',
         'category-overview'
     );
 
@@ -24,7 +24,8 @@ function displayS1(){
     clearContent();
     displaySpecial();
     const s1 = new Heading ('S1');
-    const s1Description = new Paragraph('Power:Dubs; Skill: 2xVariatedSingles; Connections: 1-1; Battle: Battle off Home Turf','category-overview');
+    const s1Overview = new Paragraph('Power:Dubs; Skill: 2xVariatedSingles; Connections: 1-1; Battle: Battle off Home Turf','category-overview');
+    const s1Description = new Paragraph("Congratulations friend!  The transition from Advanced to Special Grade represents the major breakthrough in Understanding and Power required to make techincal skills happen. Just in time, too!  You will surely need those to continue progress.", 'description');
     const S1Power = new UnorderedList(
         'Required Power',
         ['Any recognizable DoubleTwistingTrick'],
@@ -99,7 +100,8 @@ function displayS2(){
     clearContent();
     displaySpecial();
     const s2 = new Heading ('S2');
-    const s2Description = new Paragraph('Power:Variated Dubs; Skill:Landing Stances; Battle: Defeat S1','category-overview');
+    const s2Overview = new Paragraph('Power:Variated Dubs; Skill:Landing Stances; Battle: Defeat S1','category-overview');
+    const s2Description = new Paragraph('The transition from S1-S2 represents an intermediate understanding of DoubleTwistingTricks, a wide arsenal, and most importantly a strong desire to improve.','description');
     const s2Power = new UnorderedList(
         'Required Power',
         [],
@@ -169,8 +171,8 @@ function displayS3(){
     clearContent();
     displaySpecial();
     const s3 = new Heading ('S3');
-    const s3Description = new Paragraph('Power: Trip/DubDub; Battle: Defeat S2','category-overview');
-
+    const s3Overview = new Paragraph('Power: Trip/DubDub; Battle: Defeat S2','category-overview');
+    const s3Description = new Paragraph('Behold! You have completed the Main Quests of Tricking!  The transition from S2-S3 represents the ability to manifest reality.  Essentially this is a mere skill check for those serious about Battling or pushing the limits of Tricking.  You can really branch out in any direction from here and be successful.  You already know how!','description')
     const s3Power = new UnorderedList(
         'Required Power/Skill',
         [],
@@ -206,13 +208,21 @@ function displayS4(){
     clearContent();
     displaySpecial();
     const s4 = new Heading ('S4');
-    const s4Description = new Paragraph('BattleRank: RegionalMenace','category-overview');
+    const s4Overview = new Paragraph('BattleRank: RegionalMenace','category-overview');
+    const s4Description = new Paragraph('The transition from S3-S4 is reliant on your ability to hone in on your strengths and mitigate your weaknesses. Prepare your mental game as much as your Physical/Technical.  You are a force to be reckoned with and the community can no longer ignore you.', 'description')
     const s4Battle = new UnorderedList(
         'Required Battle Experience',
+        [],
+        's4-battle'
+    );
+    const s4Other = new Sublist(
+        'Minimum 2 of the following',
         ['Top 8 in Any Tournament with Preliminary Rounds',
         'Top 3 in Bracketed Tournament(2 wins required)',
+        'Defeat S3 or higher',
         'OR equivalent experience'
-        ]
+        ],
+        's4-battle'
     )
 
 }
@@ -221,7 +231,8 @@ function displayS5(){
     clearContent();
     displaySpecial();
     const s5 = new Heading ('S5');
-    const s5Description = new Paragraph('BattleRank: InternationalDemon','category-overview');
+    const s5Overview = new Paragraph('BattleRank: InternationalDemon','category-overview');
+    const s5Description = new Paragraph("King/Queen, I believe you've dropped this, 👑   The next step taken by you is a step taken for Tricking itself.  Make us proud!", 'description')
     const s5Battle = new UnorderedList(
         'Required Battle Experience',
         [],
@@ -243,4 +254,5 @@ function displayS5(){
         ['OR equivalent Experience'],
         's5-battle-experience'
     )
+    
 }

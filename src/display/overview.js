@@ -22,13 +22,13 @@ function displayOverview(){
 
     const hGrades = new Heading('The Grades');
     const pBeginner = new Paragraph(
-        'B(1-3): Beginner Grades cover basic foundational elements to tricking. From complete beginner to understanding progressions to basic flips and tricks.'
+        'B(1-3): Beginner Grades cover basic foundational elements to Tricking. From complete beginner to understanding FlippingProgressions and Beginner Tricks.'
     ); 
     const pAdvanced = new Paragraph(
-        'A(1-4): Advanced Grades cover everything from your first flips through single twisting variations.'
+        'A(1-4): Advanced Grades cover everything from entry level Flipping through SingleTwistingVariations.'
     ); 
     const pSpecial = new Paragraph(
-        'S(1-5): Special Grades cover a broad category but are essentially understood to be dubs+ and Battle-Ready.'
+        'S(1-5): Special Grades cover a broad category but are essentially understood to be DoubleTwistingTricks+ and BattleReady through InternationalDemon.'
     ); 
 
 
