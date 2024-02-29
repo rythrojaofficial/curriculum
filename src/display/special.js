@@ -47,7 +47,7 @@ function displayS1(){
         ['Any 2xVariatedSingleTwistingTrick',
         'Any 3xVariatedTrick',
         'PowerCombo with 2 PowerTricks (2 1xVariatedSingleTwistingTrick)',
-        'MarathonCombo with 10 Total Tricks (repeats ok, maximum 4 HandedTricks, HookKick not included in 10)'
+        'MarathonCombo with 8 Total Tricks (repeats ok, maximum 3 HandedTricks, maximum 1 HookKick)'
         ],
         's1-skill',
         's1-skill-minimum'
@@ -128,14 +128,13 @@ function displayS2(){
         's2-skill',
         's2-skill-example'
     );
-    const s2marathon = new Sublist(
-        'MarathonCombo with 10 Total Tricks',
-        ['No repeats',
-        'Maximum 3 HandedTricks',
-        'Maximum 1 HookKick, which does not count to 10 total'
+    const s2FiveTrick = new Sublist(
+        'Minimum 2 5TrickConnections',
+        ['No repeats across all 10 moves',
+        'Maximum 2 HandedTricks per 5TrickConnection',
         ],
         's2-skill-example'
-    )
+    );
     const s2fourSeasons = new Sublist(
         '4SeasonsLite',
         ['Combo utilizing the four landing stances(Complete, Hyper, Mega, Ultra)',],
