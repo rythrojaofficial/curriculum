@@ -5,7 +5,8 @@ import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from 
 function displayAdvanced(){
     const advancedHeader = new Heading('A(1-4): Advanced Grades');
     const advancedOverview = new Paragraph(
-        'Advanced Grades cover everything from your first flips through single twisting variations.'
+        'Advanced Grades cover everything from your first flips through single twisting variations.',
+        'category-overview'
     );
 
     const advancedNav = new Navbar(
@@ -24,7 +25,7 @@ function displayA1(){
     clearContent();
     displayAdvanced();
     const a1 = new Heading('Advanced 1');
-    const a1Description = new Paragraph('Flipping: Any surface with take-off and landing firmer than Trampoline; Floor: TornadoVariations');
+    const a1Description = new Paragraph('Flipping: Any surface with take-off and landing firmer than Trampoline; Floor: TornadoVariations','category-overview');
     const a1RequiredSkills = new UnorderedList(
         'Required Flipping Progression',
         [],
@@ -73,7 +74,7 @@ function displayA2(){
     clearContent();
     displayAdvanced();
     const a2 = new Heading('Advanced 2');
-    const a2Description = new Paragraph('Flipping:On Floor; SingleTwisting; 2TrickConnections');
+    const a2Description = new Paragraph('Flipping:On Floor; SingleTwisting; 2TrickConnections','category-overview');
     const a2Flipping = new UnorderedList(
         'Required Skills',
         [
@@ -134,7 +135,7 @@ function displayA3(){
     clearContent();
     displayAdvanced();
     const a3 = new Heading('Advanced 3');
-    const a3Description = new Paragraph('Power: Singletwisting; 2TrickConnections: 2 NonSetupTricks ');
+    const a3Description = new Paragraph('Power: Singletwisting; 2TrickConnections: 2 NonSetupTricks','category-overview');
     const a3RequiredSKills = new UnorderedList(
         'Required Skills',
         [],
@@ -150,8 +151,7 @@ function displayA3(){
         'AerialTwist',
         'Corkscrew'
         ],
-        'a3-required-skills',
-        'a3twisting'
+        'a3-required-skills'
     );
     const a3TwistExceptions = new Sublist(
         'Example substitutions',
@@ -160,7 +160,7 @@ function displayA3(){
         'Helicoptero',
         'Flikflak'
         ],
-        'a3twisting'
+        'a3-required-skills'
     );
     const a3RequiredConnections = new UnorderedList(
         'Required Connections',
@@ -184,7 +184,7 @@ function displayA4(){
     displayAdvanced();
 
     const a4 = new Heading('Advanced 4');
-    const a4Description = new Paragraph('SingleTwistingVariations; 0-1 Power Check; Battle/Performance Tested');
+    const a4Description = new Paragraph('SingleTwistingVariations; 0-1 Power Check; Battle/Performance Tested','category-overview');
     const a4Skills = new UnorderedList(
         'Required Skills',
         [],
@@ -224,7 +224,7 @@ function displayA4(){
         'a4-connection-example'
     );
     const a4twistToFlipExample = new Sublist(
-        'eg.',
+        'Examples',
         ['Raiz swingThrough GainerArabian',
         'GainerSwtich swingThrough Cork',
         'AerialUltra swingThrough Raiz',

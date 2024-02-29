@@ -7,7 +7,8 @@ import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from 
 function displayBeginning(){
     const beginnerHeader = new Heading('B(1-3): Beginner Grades');
     const beginnerOverview = new Paragraph(
-        'Beginning Grades cover basic foundational elements to tricking. From complete beginner to understanding progressions to basic flips and tricks.'
+        'Beginning Grades cover basic foundational elements to tricking. From complete beginner to understanding progressions to basic flips and tricks.',
+        'category-overview'
     );
     
     const BeginnerNav = new Navbar(

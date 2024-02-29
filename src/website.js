@@ -47,14 +47,18 @@ export class Heading{
 
 
 export class Paragraph{
-    constructor(info){
-        this.info = info
+    constructor(info, classname = 'z'){
+        this.info = info;
+        this.classname = classname;
         this.add();
     }
 
     add(){
         let paragraph = document.createElement('p');
             paragraph.textContent = this.info;
+            if(this.classname !== 'z'){
+                paragraph.classList.add(this.classname);
+            }
         content.appendChild(paragraph);
     }
 

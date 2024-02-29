@@ -5,7 +5,8 @@ import { Heading, UnorderedList, Paragraph, Navbar, clearContent, Sublist} from 
 function displaySpecial(){
     const specialHeader = new Heading('A(1-4): Special Grades');
     const specialOverview = new Paragraph(
-        'Special Grades cover a broad category but are essentially understood to be dubs+ and Battle-Ready.'
+        'Special Grades cover a broad category but are essentially understood to be dubs+ and Battle-Ready.',
+        'category-overview'
     );
 
     const specialNav = new Navbar(
@@ -23,7 +24,7 @@ function displayS1(){
     clearContent();
     displaySpecial();
     const s1 = new Heading ('S1');
-    const s1Description = new Paragraph('Power:Dubs; Skill: 2xVariatedSingles; Connections: 1-1; Battle: Battle off Home Turf');
+    const s1Description = new Paragraph('Power:Dubs; Skill: 2xVariatedSingles; Connections: 1-1; Battle: Battle off Home Turf','category-overview');
     const S1Power = new UnorderedList(
         'Required Power',
         ['Any recognizable DoubleTwistingTrick'],
@@ -98,7 +99,7 @@ function displayS2(){
     clearContent();
     displaySpecial();
     const s2 = new Heading ('S2');
-    const s2Description = new Paragraph('Power:Variated Dubs; Skill:Landing Stances ; Battle: Defeat s1');
+    const s2Description = new Paragraph('Power:Variated Dubs; Skill:Landing Stances ; Battle: Defeat s1','category-overview');
     const s2Power = new UnorderedList(
         'Required Power',
         [],
@@ -136,7 +137,7 @@ function displayS2(){
         's2-skill-example'
     )
     const s2fourSeasons = new Sublist(
-        '4 Seasons Lite',
+        '4SeasonsLite',
         ['Combo utilizing the four landing stances(Complete, Hyper, Mega, Ultra)',],
         's2-skill-example'
     )
@@ -169,7 +170,7 @@ function displayS3(){
     clearContent();
     displaySpecial();
     const s3 = new Heading ('S3');
-    const s3Description = new Paragraph('Power: Trip/DubDub; Battle: Defeat S2');
+    const s3Description = new Paragraph('Power: Trip/DubDub; Battle: Defeat S2','category-overview');
 
     const s3Power = new UnorderedList(
         'Required Power/Skill',
@@ -192,10 +193,11 @@ function displayS3(){
         [],
         's3-battle-experience'
     );
-    const s3BattleOptions = new UnorderedList(
+    const s3BattleOptions = new Sublist(
         'Minimum 1 of the following',
         ['Win a Battle against an s2 or higher',
-        'Successfully complete an S3 Power or Skill requirement in a Battle']
+        'Successfully complete an S3 Power or Skill requirement in a Battle'],
+        's3-battle-experience'
     )
 
 }
@@ -205,7 +207,7 @@ function displayS4(){
     clearContent();
     displaySpecial();
     const s4 = new Heading ('S4');
-    const s4Description = new Paragraph('BattleRank: RegionalMenace');
+    const s4Description = new Paragraph('BattleRank: RegionalMenace','category-overview');
     const s4Battle = new UnorderedList(
         'Required Battle Experience',
         ['Top 8 in Any Tournament with Preliminary Rounds',
@@ -220,7 +222,7 @@ function displayS5(){
     clearContent();
     displaySpecial();
     const s5 = new Heading ('S5');
-    const s5Description = new Paragraph('BattleRank: InternationalDemon');
+    const s5Description = new Paragraph('BattleRank: InternationalDemon','category-overview');
     const s5Battle = new UnorderedList(
         'Required Battle Experience',
         [],
