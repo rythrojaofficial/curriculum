@@ -3,7 +3,7 @@ export default createNavbar;
 import displayOverview from "./display/overview";
 import displayBeginning from "./display/beginning";
 import displayAdvanced from "./display/advanced";
-import { clearContent, navbar, navButton } from "./website";
+import { clearContent, Navbar, navbar, navButton } from "./website";
 import displaySpecial from "./display/special";
 
 function createNavbar(){
@@ -22,7 +22,24 @@ function createNavbar(){
 
     const navHeading = document.createElement('h1');
         navHeading.classList.add('nav-heading');
-        navHeading.textContent = 'Axis 45 Curriculum & Grade Scale';
+        navHeading.textContent = 'Axis 45 Curriculum & Grade Scale ⬅️';
+        navHeading.addEventListener('click', ()=>{
+            switch(navHeading.textContent){
+                case 'Axis 45 Curriculum & Grade Scale ⬅️':
+                    navHeading.textContent = 'Axis 45 Curriculum & Grade Scale ⬇️';
+                    navHeading.style.fontSize = 'medium';
+                    navbar.classList.add('hidden');
+                    break;
+                case 'Axis 45 Curriculum & Grade Scale ⬇️':
+                    navHeading.textContent = 'Axis 45 Curriculum & Grade Scale ⬅️';
+                    navHeading.style.fontSize = '2rem';
+                    navbar.classList.remove('hidden');
+                    break;
+                default:
+                    console.log('error navHeading');
+                    break
+            }
+        })
 
     const navbar = document.createElement('nav');
 
@@ -58,7 +75,7 @@ function createNavbar(){
     
     
     // append
-    navbar.appendChild(navHeading);
+    navContainer.appendChild(navHeading);
         const overview = new NavButton('Overview', 'overview-button', displayOverview);
         const beginnerGrades = new NavButton('Beginner Grades (1-3)', 'beginner-grades-button', displayBeginning);
         const advancedGrades = new NavButton('Advanced Grades (1-4)', 'advanced-grades-button', displayAdvanced);

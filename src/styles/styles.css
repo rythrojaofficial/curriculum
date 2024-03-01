@@ -29,6 +29,11 @@ header{
     overflow-y: scroll;
 }
 
+.hidden{
+    display: none;
+    font-size: 1rem;
+}
+
 
 nav button {
     font-size: 1.025rem;
