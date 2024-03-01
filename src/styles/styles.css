@@ -8,14 +8,14 @@ body {
 body{
     background: repeat url('../images/carbon_fibre.png');
     display:grid;
-    grid-template-columns: auto 90vw auto;
-    grid-template-rows: 5vh auto clamp(75vh 90vh) 5vh;
+    grid-template-columns: auto 99vw auto;
+    grid-template-rows: 3vh auto auto 3vh;
 }
 header,
 #content{
     background: repeat url('../images/white_carbon.webp');
     padding: 0 2.5rem 0 2.5rem;
-    margin: 1rem;
+    margin: .75rem;
     border-radius: 1rem;
     border-width: 1rem;
 }
@@ -31,7 +31,6 @@ header{
 
 .hidden{
     display: none;
-    font-size: 1rem;
 }
 
 
